@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shaik Jafrulla | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav class="nav">
+    <div class="logo">Shaik<span>Jafrulla</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#profile">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- 🌗 Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="profile" class="section hero reveal">
+  <!-- ✨ Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <div class="hero-content tilt">
+    <h1>Hi, I'm <span class="glow">Shaik Jafrulla</span></h1>
+    <p class="hero-subtitle">
+      <span id="typing"></span>
+    </p>
+
+    <div class="btn-container">
+      <a href="#projects" class="btn primary">View Work</a>
+      <a href="./assets/resume.pdf" class="btn secondary" target="_blank" download>
+        Download CV
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="./assets/profile-pic.jpeg" alt="Profile Image" loading="lazy">
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section reveal">
+  <h2 class="title">About Me</h2>
+  <div class="about-container">
+    <img src="./assets/about-pic.jpg" alt="About Image" class="about-img" loading="lazy">
+    <div class="about-text">
+      <p>
+       A motivated B.Tech final-year Computer Science student with strong skills in Python and full-stack web development. I focus on developing modern, high-performance, and user-centric web applications. I am passionate about continuous learning, problem-solving, and applying my technical knowledge to create impactful software solutions. I aspire to contribute to innovative teams and build scalable products that add real value.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="experience" class="section reveal">
+  <h2 class="title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><img src="./assets/python.jpg" alt="Python"><h4>Python Full Stack</h4></div>
+    <div class="skill-card"><img src="./assets/html.png" alt="HTML"><h4>HTML</h4></div>
+    <div class="skill-card"><img src="./assets/css.png" alt="CSS"><h4>CSS</h4></div>
+    <div class="skill-card"><img src="./assets/javascript.jpg" alt="JavaScript"><h4>JavaScript</h4></div>
+    <div class="skill-card"><img src="./assets/react.png" alt="React"><h4>React</h4></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section reveal">
+  <h2 class="title">Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="./assets/project-1.png" alt="Project One" loading="lazy">
+      <h3>Project One</h3> <br><br>
+      <div class="project-links">
+        <a href="#" class="btn secondary" target="_blank">GitHub</a>
+        <a href="#" class="btn primary" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-1.png" alt="Project Two" loading="lazy">
+      <h3>Project Two</h3> <br> <br>
+      <div class="project-links">
+        <a href="#" class="btn secondary" target="_blank">GitHub</a>
+        <a href="#" class="btn primary" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section reveal">
+  <h2 class="title">Contact Me</h2>
+  <div class="contact-box">
+    <p>Email: 
+      <a href="mailto:shaikjafrulla809@gmail.com">shaikjafrulla809@gmail.com</a>
+    </p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/shaik-jafrulla-424794289" target="_blank">
+        Shaik Jafrulla
+      </a>
+    </p>
+    <p>Blog Website: 
+      <a href="https://shaikjafrulla.blogspot.com/" target="_blank">
+        Click here to view best content
+      </a>
+    </p>
+    <p>YouTube Channel: 
+      <a href="https://www.youtube.com/@yourchannelname" target="_blank">
+        Watch my videos
+      </a>
+    </p>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2025 Shaik Jafrulla. All Rights Reserved.</p>
+  
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
